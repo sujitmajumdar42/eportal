@@ -1,0 +1,2 @@
+1.Install bootstrap
+    ember install ember-bootstrap

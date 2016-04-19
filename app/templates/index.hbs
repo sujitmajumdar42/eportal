@@ -1,0 +1,113 @@
+{{#if authenticated}}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10" style="border:1px solid #e6e6e6;border-radius:10px">
+             <div class="row" style="background-color: #336699;border-radius:10px">
+                <div class="col-sm-2 box" >
+                    <img src="/assets/images/header_image.png" width="100px" height="100px"/>    
+                </div>
+                <div class="col-sm-8 box" style="color:white">
+                    <h1 style="font-size:60px">e-Portal</h1>
+                    <i>Managing Resources</i>
+                </div>
+            </div>         
+        </div>
+        <div class="col-sm-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            &nbsp;
+        </div>
+    </div>    
+    <div class="row" >
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-10 box" style="border:1px solid #e6e6e6;border-radius:10px;background-color:white">
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                    <div class="col-sm-4 box">
+                        <img src="/assets/images/profile.png" width="100px" height="100px" /><br/><span class="tile_title">My Profile</span>
+                    </div>
+                    <div class="col-sm-4 box">
+                        <img src="/assets/images/notifications.jpg" width="80px" height="80px" /><br/><br/><span class="tile_title">Notifications</span>
+                    </div>
+                    <div class="col-sm-4 box">
+                        <img src="/assets/images/team.jpg" width="100px" height="100px" /><br/><span class="tile_title">My Team</span>
+                    </div>
+                    <div class="col-sm-4 box">
+                        <img src="/assets/images/timesheet.png" width="100px" height="100px" /><br/><span class="tile_title">Timesheet</span>
+                    </div>
+                    <div class="col-sm-4 box">
+                        <img src="/assets/images/worklist.jpg" width="100px" height="100px" /><br/><span class="tile_title">Worklist</span>
+                    </div>
+                    <div class="col-sm-4 box">
+                        <img src="/assets/images/elearn.png" width="100px" height="100px" /><br/><span class="tile_title">e-Learn</span>
+                    </div>
+                    </div>
+            </div> 
+                </div>
+                <div class="col-sm-2">
+                </div>
+        </div>
+        <div class="col-sm-1">
+        </div>
+    </div>    
+</div>    
+{{else}}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2 box">
+            &nbsp;
+        </div>
+        <div class="col-sm-8 box" id="loginBox">
+            <div>
+                <div class="row">
+                    <div class="col-sm-2 box">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-8 box" style="background-color:white;border-radius:10px">
+                        <div class="row">
+                            <div class="col-sm-3 box">
+                                <img src="/assets/images/userLogin.jpg" width="100px" height="100px"/>
+                            </div>
+                            <div class="col-sm-9 box">
+                                <h2>User Login</h2>
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-1 box">
+                                &nbsp;
+                            </div>
+                            <div class="col-sm-10 box" style="border:1px solid #e6e6e6;border-radius:10px">
+                                {{#bs-form formLayout="horizontal" model=this action="authenticate"}}
+                                    {{bs-form-element controlType="username" label="Username" placeholder="username" property="username"}}
+                                    {{bs-form-element controlType="password" label="Password" placeholder="Password" property="password"}}
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;
+                                    {{bs-button defaultText="Login" type="primary" buttonType="submit"}}
+                                {{/bs-form}}
+                            </div>
+                             <div class="col-sm-1 box">
+                                &nbsp;
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-sm-2 box">
+                        &nbsp;
+                    </div>
+                </div>    
+                
+            </div>    
+        </div>
+        <div class="col-sm-2 box">
+                &nbsp;
+        </div>    
+    </div>    
+</div>    
+{{/if}}

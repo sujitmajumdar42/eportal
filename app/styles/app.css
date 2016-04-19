@@ -1,0 +1,23 @@
+body{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f5f5
+}
+.box{
+    padding:20px
+}
+#loginBox{
+    background-color: #336699;
+    border-radius: 10px
+}
+#formContainer{
+    width: 30%
+}
+h2{
+    color:#737373
+}
+.tile_title{
+    color:#595959;
+    font-weight: bold;
+    padding-left: 20px;
+}
